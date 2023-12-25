@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <!---------- favicon link -------->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png">
+    <!---------- favicon link -------->
+    <!---------- link css ------------>
+    <link rel="stylesheet" href="style.css">
+    <!---------- link css ------------>
+    <!---------- Font Icon ----------->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <!---------- Font Icon ----------->
+    <!---------- swiper js ----------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!---------- swiper js ----------->
+    <!-----------jquery link --------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-----------jquery link --------->
+    <!-----------Aos    link --------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-----------Aos    link --------->
+</head>
+
+<body>
+    <!---------- Header Area ---------->
+    <section class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="navbar">
+                <div class="link">
+                    <a href="#">home</a>
+                    <a href="#">menu</a>
+                    <a href="#">offers</a>
+                    <ul class="ul">
+                        <a href="#">food<i class="fi fi-rr-angle-small-down" id="downarrow"></i></a>
+                        <div class="data">
+                            <a href="#">pizza</a>
+                            <a href="#">burger</a>
+                            <a href="#">hot wings</a>
+                            <a href="#">fries</a>
+                        </div>
+                    </ul>
+                    <a href="#">service</a>
+                    <a href="#">restaurant</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="icon">
+                    <i class="fi fi-br-bars-staggered" id="menu"></i>
+                    <div class="cart">
+                        <i class="fi fi-sr-shopping-cart" id="cart"></i>
+                        <a href="#">0</a>
+                    </div>
+                    <i class="fi fi-br-search" id="search-icon"></i>
+                    <div class="pro">
+                        <i class="fi fi-sr-user" id="profile"></i>
+                        <button class="button">Log In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------- Header Area ---------->
+
+    <!-----------Search Bar ---------->
+    <section class="search" id="search">
+        <div class="container">
+            <div class="input">
+                <input type="search" placeholder="search here...">
+                <i class="fi fi-br-search"></i>
+            </div>
+        </div>
+    </section>
+    <!-----------Search Bar ---------->
+
+    <!-----------Hero Area ----------->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="text">
+                <img src="img/hero-text.png" alt="">
+                <p>In the fast-paced world of e-commerce and online services,<br>
+                    the demand for swift and reliable deliveryhas become more<br>
+                    crucial than ever. Companies acrossindustries.</p>
+                <div class="down">
+                    <div class="input">
+                        <input type="search" name="search" id="search" placeholder="search food">
+                        <i class="fi fi-br-search"></i>
+                    </div>
+                    <div class="play">
+                        <div class="play-btn">
+                            <i class="fi fi-sr-play" id="play-btn"></i>
+                        </div>
+                        <a href="#">how to order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/hero.png" alt="">
+            </div>
+            <div class="delivery">
+                <img src="img/delivery.png" alt="" id="d-d">
+                <img src="img/mobile-de.png" alt="" id="m-d">
+            </div>
+        </div>
+        <div class="video">
+            <i class="fi fi-sr-circle-xmark" id="close"></i>
+            <video src="img/video.mp4" controls></video>
+        </div>
+    </section>
+    <!-----------Hero Area ----------->
+
+    <!-----------Apps Area ----------->
+    <section class="app" id="app">
+        <div class="container">
+            <div class="text">
+                <h1>download mobile<br>
+                    app <span>Android & Ios</span></h1>
+                <p>Android and iOS, the two dominant mobile operating<br>
+                    systems, have revolutionized the way people interact<br>
+                    with technology Google, and iOS, developed Apple.</p>
+                <div class="links">
+                    <a href="#"><img src="img/pla-dow.png" alt=""></a>
+                    <a href="#"><img src="img/ap-dow.png" alt="" id="i"></a>
+                    <a href="#"><img src="img/mic-dow.png" alt=""></a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="img/app.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-----------Apps Area ----------->
+
+    <!-----------Product Area --------->
+    <section class="product" id="product">
+        <div class="heading">
+            <img src="img/heading-p.png" alt="">
+        </div>
+        <div class="cate">
+            <div class="box" id="catebox" onclick="clickable()">
+                <div class="icon" id="icon">
+                    <img src="img/c1.png" alt="c1">
+                </div>
+                <a href="#">BreakFast Recipe</a>
+            </div>
+
+            <div class="box" id="catebox2" onclick="clickable2()">
+                <div class="icon" id="icon2">
+                    <img src="img/c2.png" alt="c1">
+                </div>
+                <a href="#">Low Calorie Recipe</a>
+            </div>
+
+            <div class="box" id="catebox3" onclick="clickable3()">
+                <div class="icon" id="icon3">
+                    <img src="img/c3.png" alt="c1">
+                </div>
+                <a href="#">Hoildays Recipe</a>
+            </div>
+
+            <div class="box" id="catebox4" onclick="clickable4()">
+                <div class="icon" id="icon4">
+                    <img src="img/c4.png" alt="c1">
+                </div>
+                <a href="#">Restrication Recipe</a>
+            </div>
+        </div>
+    </section>
+    <!-----------Product Area --------->
+
+    <!-----------Menus   Area --------->
+    <section class="menu" id="menu">
+        <div class="heading">
+            <img src="img/heading-m.png" alt="">
+        </div>
+        <!-- Swiper -->
+        <div class="swiper menu-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide p-box">
+                    <img src="img/p1.png" alt="p">
+                    <div class="text">
+                        <h3>Vegetable Salad</h3>
+                        <p>$1.00</p>
+                        <i class="fi fi-br-plus-small"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide p-box">
+                    <img src="img/p2.png" alt="p">
+                    <div class="text">
+                        <h3>Mix Salad</h3>
+                        <p>$2.00</p>
+                        <i class="fi fi-br-plus-small"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide p-box">
+                    <img src="img/p3.png" alt="p">
+                    <div class="text">
+                        <h3>Chicken Salad</h3>
+                        <p>$10.00</p>
+                        <i class="fi fi-br-plus-small"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide p-box">
+                    <img src="img/p4.png" alt="p">
+                    <div class="text">
+                        <h3>Olive Salad</h3>
+                        <p>$2.00</p>
+                        <i class="fi fi-br-plus-small"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide p-box">
+                    <img src="img/p1.png" alt="p">
+                    <div class="text">
+                        <h3>Vegetable Salad</h3>
+                        <p>$1.00</p>
+                        <i class="fi fi-br-plus-small"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide p-box">
+                    <img src="img/p2.png" alt="p">
+                    <div class="text">
+                        <h3>Mix Salad</h3>
+                        <p>$2.00</p>
+                        <i class="fi fi-br-plus-small"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper JS -->
+    </section>
+    <!-----------Menus   Area --------->
+
+    <!-----------Offers  Area --------->
+    <section class="offer" id="offer">
+        <div class="heading">
+            <img src="img/heading-o.png" alt="">
+        </div>
+        <div class="container">
+            <div class="big-image">
+            <img src="img/o1.png" alt="">
+        </div>
+            <div class="image">
+                <img src="img/o2.png" alt="">
+                <img src="img/o3.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-----------Offers  Area --------->
+
+    <!-----------Contact Us ----------->
+    <section class="con" id="con">
+        <div class="container">
+            <h1>Get Started With <span>Resturents?</span></h1>
+            <p>Table service is food ordered by the customer at the table and<br>
+                served to the customer's table by  also known as "servers"</p>
+                <div class="input">
+                    <input type="email" id="email" name="email" placeholder="enter your email">
+                    <button>subscribe</button>
+                </div>
+        </div>
+    </section>
+    <!-----------Contact Us ----------->
+
+    <!-----------Footer Area ---------->
+    <section class="fot" id="fot">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+                <img src="img/white-logo.png" alt="" id="white">
+            </div>
+            <div class="link">
+                <h1>quick link<i class="fi fi-rr-angle-small-down" id="arrow1"></i></h1>
+                <div class="navbar" id="nav1">
+                    <a href="#">home</a>
+                    <a href="#">menu</a>
+                    <a href="#">offers</a>
+                    <a href="#">foods</a>
+                    <a href="#">service</a>
+                    <a href="#">resturants</a>
+                </div>
+            </div>
+            
+            <div class="link">
+                <h1>about us<i class="fi fi-rr-angle-small-down" id="arrow2"></i></h1>
+                <div class="navbar" id="nav2">
+                    <a href="#">about us</a>
+                    <a href="#">feature</a>
+                    <a href="#">blog and news</a>
+                    <a href="#">faqs</a>
+                </div>
+            </div>
+
+            <div class="link">
+                <h1>movement<i class="fi fi-rr-angle-small-down" id="arrow3"></i></h1>
+                <div class="navbar" id="nav3">
+                    <a href="#">what resturant</a>
+                    <a href="#">support us</a> 
+                </div>
+            </div>
+
+            <div class="link">
+                <h1>contact us<i class="fi fi-rr-angle-small-down" id="arrow4"></i></h1>
+
+                <div class="data" id="nav4">
+
+                    <div class="box">
+                        <i class="fi fi-ss-marker"></i>
+                        <p>2363 Mount Street <br>
+                            Saginaw zip code 48607</p>
+                    </div>
+
+                    <div class="box">
+                        <i class="fi fi-sr-circle-phone-flip"></i>
+                        <p>+1 258-741-25</p>
+                    </div>
+
+                    <div class="box" id="l-box">
+                        <i class="fi fi-sr-envelope"></i>
+                        <p>restaurant.com</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="last">
+            <p>CopyRight By restaurant All Reserved 2023!</p>
+            <div class="link">
+                <a href="#">Term And Condition </a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Faqs</a>
+                <a href="#">Cookies Privacy</a>
+            </div>
+        </div>
+    </section>
+    <!-----------Footer Area ---------->
+</body>
+<!---------- swiper js ----------->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!---------- swiper js ----------->
+<!---------- javascript ---------->
+<script src="style.js"></script>
+<!---------- javascript ---------->
+<!-----------jquery link --------->
+<script src="jquery-3.6.4.min.js"></script>
+<!-----------jquery link --------->
+<!-----------Aos    link --------->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-----------Aos    link---------->
+
+</html>
